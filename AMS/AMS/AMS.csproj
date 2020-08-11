@@ -1,0 +1,436 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{39E5527F-FB76-4FC7-8728-298DB693EDFD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>AMS</RootNamespace>
+    <AssemblyName>AMS</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>LogoMakr_6XKPis.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Accessibility" />
+    <Reference Include="CategisSecurity">
+      <HintPath>..\Security Library\Local\CategisSecurity.dll</HintPath>
+    </Reference>
+    <Reference Include="DevExpress.BonusSkins.v18.2" />
+    <Reference Include="DevExpress.Charts.v18.2.Core, Version=18.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.CodeParser.v18.2, Version=18.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Data.v18.2" />
+    <Reference Include="DevExpress.DataAccess.v18.2, Version=18.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Dialogs.v18.2.Core, Version=18.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Office.v18.2.Core, Version=18.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Pdf.v18.2.Core, Version=18.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.PivotGrid.v18.2.Core, Version=18.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v18.2.Core, Version=18.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.RichEdit.v18.2.Export, Version=18.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.Utils.v18.2" />
+    <Reference Include="DevExpress.Sparkline.v18.2.Core" />
+    <Reference Include="DevExpress.Utils.v18.2.UI, Version=18.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.Xpo.v18.2, Version=18.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraBars.v18.2, Version=18.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraCharts.v18.2, Version=18.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraDialogs.v18.2, Version=18.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraEditors.v18.2" />
+    <Reference Include="DevExpress.Printing.v18.2.Core" />
+    <Reference Include="DevExpress.XtraGauges.v18.2.Core, Version=18.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraGrid.v18.2, Version=18.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v18.2, Version=18.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraPrinting.v18.2, Version=18.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraReports.v18.2, Version=18.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraReports.v18.2.Extensions, Version=18.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraTreeList.v18.2, Version=18.2.13.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="frmAddProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddProject.Designer.cs">
+      <DependentUpon>frmAddProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmChangePassword.designer.cs">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDashBoard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDashBoard.Designer.cs">
+      <DependentUpon>frmDashBoard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDAssessment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDAssessment.Designer.cs">
+      <DependentUpon>frmDAssessment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmEmployeeTask.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmEmployeeTask.Designer.cs">
+      <DependentUpon>frmEmployeeTask.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHolidayMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHolidayMaster.Designer.cs">
+      <DependentUpon>frmHolidayMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMAssessment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMAssessment.Designer.cs">
+      <DependentUpon>frmMAssessment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSpinner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSpinner.designer.cs">
+      <DependentUpon>frmSpinner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProjectMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProjectMaster.Designer.cs">
+      <DependentUpon>frmProjectMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmWorkType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmWorkType.Designer.cs">
+      <DependentUpon>frmWorkType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTaskEntry.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTaskEntry.Designer.cs">
+      <DependentUpon>frmTaskEntry.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmSubTaskMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmSubTaskMaster.Designer.cs">
+      <DependentUpon>frmSubTaskMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProjectWorkType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProjectWorkType.Designer.cs">
+      <DependentUpon>frmProjectWorkType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTaskMaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTaskMaster.Designer.cs">
+      <DependentUpon>frmTaskMaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTimesheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTimesheet.Designer.cs">
+      <DependentUpon>frmTimesheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmTimeSheetEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTimeSheetEdit.Designer.cs">
+      <DependentUpon>frmTimeSheetEdit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUser.designer.cs">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewProject.Designer.cs">
+      <DependentUpon>frmViewProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmViewTimesheet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmViewTimesheet.Designer.cs">
+      <DependentUpon>frmViewTimesheet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\rptDGeneralAssessment.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptDGeneralAssessment.Designer.cs">
+      <DependentUpon>rptDGeneralAssessment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptDProjectAssessment.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptDProjectAssessment.Designer.cs">
+      <DependentUpon>rptDProjectAssessment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptDLeadAssessment.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptDLeadAssessment.Designer.cs">
+      <DependentUpon>rptDLeadAssessment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptFinalRatingWithLR.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptFinalRatingWithLR.Designer.cs">
+      <DependentUpon>rptFinalRatingWithLR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptFinalRating.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptFinalRating.Designer.cs">
+      <DependentUpon>rptFinalRating.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptSProjectAssessment.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptSProjectAssessment.Designer.cs">
+      <DependentUpon>rptSProjectAssessment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptDTechnicalAssessment.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptDTechnicalAssessment.Designer.cs">
+      <DependentUpon>rptDTechnicalAssessment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptSTechnicalAssessment.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptSTechnicalAssessment.Designer.cs">
+      <DependentUpon>rptSTechnicalAssessment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptSGeneralAssessment.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptSGeneralAssessment.Designer.cs">
+      <DependentUpon>rptSGeneralAssessment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptSLeadershipAssessment.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptSLeadershipAssessment.Designer.cs">
+      <DependentUpon>rptSLeadershipAssessment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utility.cs" />
+    <Compile Include="frmAssessment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAssessment.Designer.cs">
+      <DependentUpon>frmAssessment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\rptSelfAssessment.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Reports\rptSelfAssessment.Designer.cs">
+      <DependentUpon>rptSelfAssessment.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="frmAddProject.resx">
+      <DependentUpon>frmAddProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmChangePassword.resx">
+      <DependentUpon>frmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDashBoard.resx">
+      <DependentUpon>frmDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDAssessment.resx">
+      <DependentUpon>frmDAssessment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmEmployeeTask.resx">
+      <DependentUpon>frmEmployeeTask.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHolidayMaster.resx">
+      <DependentUpon>frmHolidayMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMAssessment.resx">
+      <DependentUpon>frmMAssessment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSpinner.resx">
+      <DependentUpon>frmSpinner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProjectMaster.resx">
+      <DependentUpon>frmProjectMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmWorkType.resx">
+      <DependentUpon>frmWorkType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTaskEntry.resx">
+      <DependentUpon>frmTaskEntry.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmSubTaskMaster.resx">
+      <DependentUpon>frmSubTaskMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProjectWorkType.resx">
+      <DependentUpon>frmProjectWorkType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTaskMaster.resx">
+      <DependentUpon>frmTaskMaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTimesheet.resx">
+      <DependentUpon>frmTimesheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTimeSheetEdit.resx">
+      <DependentUpon>frmTimeSheetEdit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUser.resx">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewProject.resx">
+      <DependentUpon>frmViewProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmViewTimesheet.resx">
+      <DependentUpon>frmViewTimesheet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="frmAssessment.resx">
+      <DependentUpon>frmAssessment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptDLeadAssessment.resx">
+      <DependentUpon>rptDLeadAssessment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptFinalRatingWithLR.resx">
+      <DependentUpon>rptFinalRatingWithLR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptFinalRating.resx">
+      <DependentUpon>rptFinalRating.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptSelfAssessment.resx">
+      <DependentUpon>rptSelfAssessment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptDGeneralAssessment.resx">
+      <DependentUpon>rptDGeneralAssessment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptDProjectAssessment.resx">
+      <DependentUpon>rptDProjectAssessment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptSProjectAssessment.resx">
+      <DependentUpon>rptSProjectAssessment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptDTechnicalAssessment.resx">
+      <DependentUpon>rptDTechnicalAssessment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptSTechnicalAssessment.resx">
+      <DependentUpon>rptSTechnicalAssessment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptSGeneralAssessment.resx">
+      <DependentUpon>rptSGeneralAssessment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\rptSLeadershipAssessment.resx">
+      <DependentUpon>rptSLeadershipAssessment.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DL\DL.csproj">
+      <Project>{51dcf4dc-8784-4503-8b5c-dc628299b039}</Project>
+      <Name>DL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EL\EL.csproj">
+      <Project>{f81c1004-da47-48a7-a98e-a2408ba2adc2}</Project>
+      <Name>EL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LogoMakr_6XKPis.ico" />
+    <None Include="Resources\STG_NewEn.png" />
+    <None Include="Resources\Time_Task.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
